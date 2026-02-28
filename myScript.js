@@ -388,13 +388,6 @@ function setLanguage(lang) {
 document.addEventListener('DOMContentLoaded', function() {
     const body = document.body;
 
-    // Register CSS Paint API worklet for brush stroke
-    if ('paintWorklet' in CSS) {
-        CSS.paintWorklet.addModule('brush-stroke.js').catch(err => {
-            console.warn('Failed to load brush stroke worklet:', err);
-        });
-    }
-
     // Function to reset beam opacity when switching to light theme
     function resetBeam() {
         const beam = document.querySelector('.beam');

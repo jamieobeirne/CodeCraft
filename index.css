@@ -62,12 +62,6 @@
     
     /* Transitions */
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    
-    /* Brush Stroke Paint Worklet Properties */
-    --brush-color: var(--medium-jungle);
-    --brush-opacity: 0.6;
-    --brush-width: 800px;
-    --brush-height: 120px;
 }
 
 html {
@@ -80,7 +74,6 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg);
-    background-image: paint(brushStroke);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
