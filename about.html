@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - John Doe Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">&lt;JD /&gt;</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+                <li><a href="testimonials.html" class="nav-link" data-i18n="nav.testimonials">Testimonials</a></li>
+                <li><a href="about.html" class="nav-link active" data-i18n="nav.about">About</a></li>
+            </ul>
+            <div class="header-controls">
+                <div class="language-toggle" id="languageToggle">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="es">ES</button>
+                    <button class="lang-btn" data-lang="ca">CA</button>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-placeholder-large">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <div class="page-header">
+                        <h1 class="page-title" data-i18n="about.title">About Me</h1>
+                        <p class="page-subtitle" data-i18n="about.subtitle">1231</p>
+                    </div>
+                    
+                    <div class="about-description">
+                        <!--<p data-i18n="about.paragraph1">-->
+                            <p>
+                            Hello! 
+
+If you can imagine it, I can build it.
+
+To get started, I want to help you know what you want. Try these strategies:
+
+Find 3 webpages you like. Let’s look at those together and talk about why you like them.
+
+What are the 3 aspects do you want users to immediately know about.
+
+Users frequently leave a webpage after 10 seconds. What do you want to say to them in 10 seconds? Tell them why you are unique.
+
+Following that, lets get out the design tools (Figma and Canva), and bang out a Mood Board for colors, fonts, & general feel, a site map to keep us oriented globally , & then a wireframe to get oriented specifically. 
+
+I hand-build websites from the ground up, working directly with the raw code, JavaScript, HTML, and CSS. 
+
+My websites don't break (like Wordpress ), don't require a monthly fee (like Squarespace), and are not vulnerable to hacking.
+                        </p>
+                    
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label" data-i18n="about.stats.projects">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">30+</div>
+                            <div class="stat-label" data-i18n="about.stats.clients">Happy Clients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label" data-i18n="about.stats.experience">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-section">
+                <h2 class="section-title" data-i18n="about.experience.title">Experience & Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="about.experience.job1.title">Senior Web Developer</h3>
+                            <p class="timeline-company">Tech Solutions Inc. | 2021 - Present</p>
+                            <p data-i18n="about.experience.job1.description">Leading development of web applications and mentoring junior developers. 
+                            Collaborating with cross-functional teams to deliver high-quality software solutions.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="about.experience.job2.title">Web Developer</h3>
+                            <p class="timeline-company">Digital Agency | 2019 - 2021</p>
+                            <p data-i18n="about.experience.job2.description">Developed responsive websites and web applications for various clients. 
+                            Worked with modern frameworks and maintained high code quality standards.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="about.experience.education.title">Bachelor of Science in Computer Science</h3>
+                            <p class="timeline-company">University of Technology | 2015 - 2019</p>
+                            <p data-i18n="about.experience.education.description">Graduated with honors. Focused on web development, software engineering, 
+                            and human-computer interaction. Active member of the coding club.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="values-section">
+                <h2 class="section-title" data-i18n="about.values.title">My Values</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3 data-i18n="about.values.innovation.title">Innovation</h3>
+                        <p data-i18n="about.values.innovation.description">Always exploring new technologies and creative solutions to solve problems.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-heart"></i>
+                        <h3 data-i18n="about.values.passion.title">Passion</h3>
+                        <p data-i18n="about.values.passion.description">Genuine love for coding and creating digital experiences that make a difference.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-users"></i>
+                        <h3 data-i18n="about.values.collaboration.title">Collaboration</h3>
+                        <p data-i18n="about.values.collaboration.description">Believing in the power of teamwork and open communication to achieve great results.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3 data-i18n="about.values.growth.title">Growth</h3>
+                        <p data-i18n="about.values.growth.description">Continuously learning and improving to stay at the forefront of web development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 John Doe. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <script src="myScript.js"></script>
+</body>
+</html>
+
