@@ -161,7 +161,7 @@ body.dark-theme::before {
     right: 0;
     width: 100%;
     max-width: 100vw;
-    height: 95px; /* Set a consistent height that fits the logo */
+    height: 85px; /* Set a consistent height that fits the logo */
     z-index: 1000;
     background-color: var(--header-bg);
     backdrop-filter: blur(10px);
@@ -1837,6 +1837,26 @@ body.dark-theme #beam2 {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+}
+
+.project-link {
+    display: inline-block;
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--accent);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    transition: var(--transition);
+}
+
+.project-link:hover {
+    background: var(--accent);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
 }
 
 .portfolio-tags span {
