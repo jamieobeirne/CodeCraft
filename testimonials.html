@@ -10,24 +10,36 @@
 <body class="dark-theme">
     <!-- Navigation -->
     <nav class="navbar">
+        <div class="mobile-menu-overlay" id="menuOverlay"></div>
         <div class="nav-container">
-            <div class="logo">
-                <span class="logo-text">&lt;JD /&gt;</span>
-            </div>
-            <ul class="nav-menu">
+            <a href="index.html" class="logo">
+                <img src="./assets/logo.png" alt="CodeCraft Logo" class="logo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span class="logo-fallback" style="display:none;">CodeCraft</span>
+            </a>
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
                 <li><a href="testimonials.html" class="nav-link active" data-i18n="nav.testimonials">Testimonials</a></li>
+                <li><a href="portfolio.html" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
                 <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li class="mobile-lang-container">
+                    <div class="language-toggle mobile-toggle">
+                        <button class="lang-btn active" data-lang="en">Eng</button>
+                        <button class="lang-btn" data-lang="es">Es</button>
+                        <button class="lang-btn" data-lang="ca">Cat</button>
+                    </div>
+                </li>
             </ul>
             <div class="header-controls">
                 <div class="language-toggle" id="languageToggle">
-                    <button class="lang-btn active" data-lang="en">EN</button>
-                    <button class="lang-btn" data-lang="es">ES</button>
-                    <button class="lang-btn" data-lang="ca">CA</button>
+                    <button class="lang-btn active" data-lang="en">Eng</button>
+                    <button class="lang-btn" data-lang="es">Es</button>
+                    <button class="lang-btn" data-lang="ca">Cat</button>
                 </div>
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                    <i class="fas fa-sun"></i>
-                </button>
             </div>
         </div>
     </nav>
@@ -188,13 +200,20 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 John Doe. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/jamie-o-beirne/" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p>by Jamie O'Beirne</p>
+            <p>Code Craft</p>
+            <p>updated February 2026</p>
         </div>
     </footer>
 
+    <script src="contentLoader.js"></script>
     <script src="myScript.js"></script>
 </body>
 </html>

@@ -10,27 +10,61 @@
 <body class="dark-theme">
     <!-- Navigation -->
     <nav class="navbar">
+        <div class="mobile-menu-overlay" id="menuOverlay"></div>
         <div class="nav-container">
-            <div class="logo">
-                <span class="logo-text">&lt;JD /&gt;</span>
-            </div>
-            <ul class="nav-menu">
+            <a href="index.html" class="logo">
+                <img src="./assets/logo.png" alt="CodeCraft Logo" class="logo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span class="logo-fallback" style="display:none;">CodeCraft</span>
+            </a>
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
                 <li><a href="testimonials.html" class="nav-link" data-i18n="nav.testimonials">Testimonials</a></li>
+                <li><a href="portfolio.html" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
                 <li><a href="about.html" class="nav-link active" data-i18n="nav.about">About</a></li>
+                <li class="mobile-lang-container">
+                    <div class="language-toggle mobile-toggle">
+                        <button class="lang-btn active" data-lang="en">Eng</button>
+                        <button class="lang-btn" data-lang="es">Es</button>
+                        <button class="lang-btn" data-lang="ca">Cat</button>
+                    </div>
+                </li>
             </ul>
             <div class="header-controls">
                 <div class="language-toggle" id="languageToggle">
-                    <button class="lang-btn active" data-lang="en">EN</button>
-                    <button class="lang-btn" data-lang="es">ES</button>
-                    <button class="lang-btn" data-lang="ca">CA</button>
+                    <button class="lang-btn active" data-lang="en">Eng</button>
+                    <button class="lang-btn" data-lang="es">Es</button>
+                    <button class="lang-btn" data-lang="ca">Cat</button>
                 </div>
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                    <i class="fas fa-sun"></i>
-                </button>
             </div>
         </div>
     </nav>
+    <div class="hero-illustration">
+        <svg id="lampSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 800">
+            <g id="light">
+                <!-- Beam adjusted for longer stand: starts lower and expands further -->
+                <polygon id="beam1" style="fill:#FFDA44;" points="89.946,276.757 0,800 500,800 422.054,276.757 256,249.081 "/>
+                <polygon id="beam2" style="fill:#FF9811;" points="89.946,276.757 0,800 256,800 256,249.081 "/>
+                
+                <!-- Longer Stand: height increased from 249 to 549 -->
+                <rect x="228.324" y="221.405" style="fill:#50412E;" width="55.351" height="549.081"/>
+                
+                <!-- Base moved lower: y increased from 456 to 756 -->
+                <rect x="131.459" y="756.649" style="fill:#3a3733;" width="249.081" height="55.351"/>
+                <rect x="131.459" y="756.649" style="fill:#282017;" width="124.541" height="55.351"/>
+                
+                <circle id="bulb" cx="256" cy="256" r="76.108"/>
+                <path style="fill:#616064;" d="M339.027,132.924V83.027C339.027,37.173,301.854,0,256,0s-83.027,37.173-83.027,83.027v49.896
+                    c-49.632,28.712-83.027,82.371-83.027,143.833h332.108C422.054,215.295,388.659,161.636,339.027,132.924z"/>
+                <path d="M256,0c-45.854,0-83.027,37.173-83.027,83.027v49.896c-49.632,28.712-83.027,82.371-83.027,143.833H256
+                    C256,276.757,256,73.341,256,0z"/>
+            </g>
+        </svg>
+    </div>
 
     <!-- About Section -->
     <section class="about-section">
@@ -149,13 +183,20 @@ My websites don't break (like Wordpress ), don't require a monthly fee (like Squ
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 John Doe. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/jamie-o-beirne/" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p>by Jamie O'Beirne</p>
+            <p>Code Craft</p>
+            <p>updated February 2026</p>
         </div>
     </footer>
 
+    <script src="contentLoader.js"></script>
     <script src="myScript.js"></script>
 </body>
 </html>
