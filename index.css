@@ -1930,7 +1930,7 @@ body.dark-theme #beam2 {
     }
     
     .nav-menu {
-        gap: 1rem;
+        gap: .5rem;
     }
 }
 
@@ -1975,7 +1975,7 @@ body.dark-theme #beam2 {
     }
     
     .nav-menu {
-        gap: 1rem;
+        gap: .5rem;
     }
     
     .hero-headline1 {
@@ -2034,7 +2034,7 @@ body.dark-theme #beam2 {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 250px;
+        width: 150px;
         height: 100vh;
         background-color: var(--header-bg);
         flex-direction: column;
@@ -2065,7 +2065,7 @@ body.dark-theme #beam2 {
     .nav-link {
         display: block;
         width: 100%;
-        padding: 1rem 0;
+        padding: .5rem 0;
         font-size: 1.1rem;
         text-align: center; /* Center text for links */
     }
@@ -2158,7 +2158,7 @@ body.dark-theme #beam2 {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 250px;
+        width: 150px;
         height: 100vh;
         background-color: var(--header-bg);
         flex-direction: column;
