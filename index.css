@@ -2110,10 +2110,10 @@ body.dark-theme #beam2 {
         min-width: 200px;
     }
     
-    /* Ensure lamp toggle works on small screens - higher z-index than nav menu */
+    /* Ensure lamp toggle works on small screens */
     .hero-illustration {
         pointer-events: none;
-        z-index: 1011 !important; /* Higher than nav-menu (1010) */
+        z-index: 100 !important;
         position: relative;
     }
     
@@ -2175,10 +2175,10 @@ body.dark-theme #beam2 {
 }
 
 @media (max-width: 600px) {
-    /* Ensure lamp toggle works on very small screens - same high z-index as 700px */
+    /* Ensure lamp toggle works on very small screens */
     .hero-illustration {
         pointer-events: none;
-        z-index: 1011 !important; /* Higher than nav-menu (1010) */
+        z-index: 100 !important;
         position: relative;
         padding: 0 1rem;
     }
@@ -2275,7 +2275,7 @@ body.dark-theme #beam2 {
     /* Ensure lamp toggle works at 480px and below */
     .hero-illustration {
         pointer-events: none;
-        z-index: 1011 !important; /* Higher than nav-menu (1010) */
+        z-index: 100 !important;
         position: relative;
         padding: 0 0.5rem;
     }
@@ -2283,7 +2283,7 @@ body.dark-theme #beam2 {
     .hero-illustration svg {
         pointer-events: none !important;
         position: relative;
-        z-index: 1002;
+        z-index: 101;
         min-width: 60px;
         min-height: 60px;
     }
@@ -2396,7 +2396,7 @@ body.dark-theme #beam2 {
     /* Ensure lamp toggle works at 480px and below */
     .hero-illustration {
         pointer-events: none;
-        z-index: 1011 !important; /* Higher than nav-menu (1010) */
+        z-index: 100 !important;
         position: relative;
         padding: 0 0.5rem;
     }
@@ -2404,7 +2404,7 @@ body.dark-theme #beam2 {
     .hero-illustration svg {
         pointer-events: none !important;
         position: relative;
-        z-index: 1002;
+        z-index: 101;
         min-width: 60px;
         min-height: 60px;
     }
@@ -2444,7 +2444,7 @@ body.dark-theme #beam2 {
     /* Ensure lamp toggle works at 350px and below */
     .hero-illustration {
         pointer-events: none;
-        z-index: 1011 !important; /* Higher than nav-menu (1010) */
+        z-index: 100 !important;
         position: relative;
         padding: 0 0.5rem;
     }
