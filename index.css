@@ -2090,10 +2090,6 @@ body.dark-theme #beam2 {
         z-index: 1005 !important;
     }
     
-    .mobile-menu-overlay {
-        display: block;
-    }
-    
     .hero-content-wrapper {
         grid-template-columns: 1fr;
         gap: 2rem;
