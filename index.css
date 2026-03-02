@@ -2117,7 +2117,7 @@ body.dark-theme #beam2 {
     /* Ensure lamp toggle works on small screens - higher z-index than nav menu */
     .hero-illustration {
         pointer-events: none;
-        z-index: 100 !important; /* Lowered from 1001 to be below overlay and menu */
+        z-index: 1011 !important; /* Higher than nav-menu (1010) */
         position: relative;
     }
     
@@ -2182,7 +2182,7 @@ body.dark-theme #beam2 {
     /* Ensure lamp toggle works on very small screens - same high z-index as 700px */
     .hero-illustration {
         pointer-events: none;
-        z-index: 100 !important; /* Lowered from 1001 to be below overlay and menu */
+        z-index: 1011 !important; /* Higher than nav-menu (1010) */
         position: relative;
         padding: 0 1rem;
     }
@@ -2279,11 +2279,11 @@ body.dark-theme #beam2 {
     /* Ensure lamp toggle works at 480px and below */
     .hero-illustration {
         pointer-events: none;
-        z-index: 100 !important; /* Lowered from 1001 to be below overlay and menu */
+        z-index: 1011 !important; /* Higher than nav-menu (1010) */
         position: relative;
         padding: 0 0.5rem;
     }
-    
+
     .hero-illustration svg {
         pointer-events: none !important;
         position: relative;
@@ -2400,11 +2400,11 @@ body.dark-theme #beam2 {
     /* Ensure lamp toggle works at 480px and below */
     .hero-illustration {
         pointer-events: none;
-        z-index: 100 !important; /* Lowered from 1001 to be below overlay and menu */
+        z-index: 1011 !important; /* Higher than nav-menu (1010) */
         position: relative;
         padding: 0 0.5rem;
     }
-    
+
     .hero-illustration svg {
         pointer-events: none !important;
         position: relative;
@@ -2448,7 +2448,7 @@ body.dark-theme #beam2 {
     /* Ensure lamp toggle works at 350px and below */
     .hero-illustration {
         pointer-events: none;
-        z-index: 100 !important; /* Lowered from 1001 to be below overlay and menu */
+        z-index: 1011 !important; /* Higher than nav-menu (1010) */
         position: relative;
         padding: 0 0.5rem;
     }

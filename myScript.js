@@ -374,7 +374,7 @@ function setLanguage(lang) {
             if (key === 'hero.greeting') {
                 element.innerHTML = translation + '<div class="blinking-cursor"></div>';
             } else {
-                element.textContent = translation;
+            element.textContent = translation;
             }
         }
     });
